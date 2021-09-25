@@ -1,17 +1,17 @@
-Unit Test - Bowling Game («OÄÖ²y¤ñÁÉ­p¤À¤è¦¡)
+Unit Test - Bowling Game (ä¿é½¡çƒæ¯”è³½è¨ˆåˆ†æ–¹å¼)
 
-­p¤À³W«h:­p¤À³æ¦ì¬O§½(Game),¨C§½¦@¦³¤Q­Ó­p¤À®æ(Frame)¡C¨C­Ó­p¤À®æ³Ì¦h¦³¨â¦¸§ë²y(Roll)¾÷·|¡C­Y²Ä¤@¦¸§ë²y´N¥´­Ë¥þ³¡²y²~(Pin),¸Ó¦¸­p¤À´N­pStrike(¥þ­Ë),µ²§ô¸Ó¦¸­p¤À®æ;
-         ­Y²Ä¤@¦¸¨S¦³¥þ­Ë,«h¥i¥H¦A§ë²Ä¤G¦¸,¦pªG§â³Ñ¤Uªº²y²~¥þ³£À»­Ë´N°OSpare(¸É¤¤)¡C
+è¨ˆåˆ†è¦å‰‡:è¨ˆåˆ†å–®ä½æ˜¯å±€(Game),æ¯å±€å…±æœ‰åå€‹è¨ˆåˆ†æ ¼(Frame)ã€‚æ¯å€‹è¨ˆåˆ†æ ¼æœ€å¤šæœ‰å…©æ¬¡æŠ•çƒ(Roll)æ©Ÿæœƒã€‚è‹¥ç¬¬ä¸€æ¬¡æŠ•çƒå°±æ‰“å€’å…¨éƒ¨çƒç“¶(Pin),è©²æ¬¡è¨ˆåˆ†å°±è¨ˆStrike(å…¨å€’),çµæŸè©²æ¬¡è¨ˆåˆ†æ ¼;
+         è‹¥ç¬¬ä¸€æ¬¡æ²’æœ‰å…¨å€’,å‰‡å¯ä»¥å†æŠ•ç¬¬äºŒæ¬¡,å¦‚æžœæŠŠå‰©ä¸‹çš„çƒç“¶å…¨éƒ½æ“Šå€’å°±è¨˜Spare(è£œä¸­)ã€‚
 
-         ¦pªGÀ»¥XStrike«h¸Ó¦¸­p¤À®æªº¤À¼Æ»Ý­nÀ»­Ë10²~ªº10¤À+«á­±¨â¦¸©Ò¥´­Ëªº²y²~¤À¼Æ¡C
-         ¦pªGÀ»¥XSpare«h¸Ó¦¸­p¤À®æªº¤À¼Æ»Ý­nÀ»­Ë10²~ªº10¤À+«á­±¤@¦¸¥á²y©Ò¥´­Ëªº²y²~¤À¼Æ¡C
-         ¦pªG¦b²Ä10­Ó­p¤À®æ¥´¥XStrike©ÎSpare´N·|¦A¦h¥X¤@¦¸¥á²yªº¾÷·|,³o¼Ë¤~¯à¨M©w²Ä10­Ó­p¤À®æªº¤À¼Æ¡A´«¨¥¤§²Ä10­Ó­p¤À®æ³Ì¦h¥i¥H¥á3¦¸¡C
-         ºî¦X¥H¤W³æ§½³Ì°ª¤À¬°300¤À,§Y³sÄò§ë¥X12­ÓStrike,¦Ó¸Ó§½¤S³QºÙ¬°Perfect Game
+         å¦‚æžœæ“Šå‡ºStrikeå‰‡è©²æ¬¡è¨ˆåˆ†æ ¼çš„åˆ†æ•¸éœ€è¦æ“Šå€’10ç“¶çš„10åˆ†+å¾Œé¢å…©æ¬¡æ‰€æ‰“å€’çš„çƒç“¶åˆ†æ•¸ã€‚
+         å¦‚æžœæ“Šå‡ºSpareå‰‡è©²æ¬¡è¨ˆåˆ†æ ¼çš„åˆ†æ•¸éœ€è¦æ“Šå€’10ç“¶çš„10åˆ†+å¾Œé¢ä¸€æ¬¡ä¸Ÿçƒæ‰€æ‰“å€’çš„çƒç“¶åˆ†æ•¸ã€‚
+         å¦‚æžœåœ¨ç¬¬10å€‹è¨ˆåˆ†æ ¼æ‰“å‡ºStrikeæˆ–Spareå°±æœƒå†å¤šå‡ºä¸€æ¬¡ä¸Ÿçƒçš„æ©Ÿæœƒ,é€™æ¨£æ‰èƒ½æ±ºå®šç¬¬10å€‹è¨ˆåˆ†æ ¼çš„åˆ†æ•¸ï¼Œæ›è¨€ä¹‹ç¬¬10å€‹è¨ˆåˆ†æ ¼æœ€å¤šå¯ä»¥ä¸Ÿ3æ¬¡ã€‚
+         ç¶œåˆä»¥ä¸Šå–®å±€æœ€é«˜åˆ†ç‚º300åˆ†,å³é€£çºŒæŠ•å‡º12å€‹Strike,è€Œè©²å±€åˆè¢«ç¨±ç‚ºPerfect Game
 
 commitMessage:
-1st-test:©w¸q´ú¸Õ¤èªkTestGutterGame(),´ú¸Õ20¦¸§ë²y¥þ³¡¬~·¾ªºª¬ªp,Á`±o¤ÀÀ³¬°0¤À
-2nd-test:·s¼W´ú¸Õ¤èªkTestAllOnes(),´ú¸Õ20¦¸§ë²y³£¥u±o1¤À,Á`±o¤ÀÀ³¬°20,¨ÃTestGutterGame()¤èªk°µ­«ºc,¦@³q¹ê§@ÅÞ¿è³¡¤À
-3rd-test:·s¼W´ú¸Õ¤èªkTestOneSpare(),´ú¸Õ¥u¦³¤@¦¸¸É¤¤¥H¤Î¤@¦¸­p¤À®æ¥uÀ»­Ë³¡¤À²y²~(¨ä¥L16¦¸§ë²y±o¤À§¡0¤À)ªºÁ`±o¤À¼Æ
-4th-test:·s¼W´ú¸Õ¤èªkTestOneStrke(),´ú¸Õ¥u¦³¤@¦¸¥þ¤¤¥H¤Î¤@¦¸­p¤À®æ(frame)¨â¦¸§ë²y¦UÀ»­Ë3¸ò4­Ó²y²~ªº±¡ªp¤U(16¦¸§ë²y±o¤À§¡0¤À)ªºÁ`±o¤À¼Æ
-5th-test:·s¼W´ú¸Õ¤èªkTestPerfectGame(),´ú¸Õ¥þ­Ëªº12¦¸§ë²y¤¤ªºÁ`±o¤À¼Æ(º¡¤À300¤À)
-*¦b¶V«á­±ªº·s¼W´ú¸Õ¤¤·|µo²{¡AºCºC­×§ï«áªºGame Class¤¤ªºÅÞ¿è¥þ¤£¥Î­×§ï,¥i¥HÀ³¥I©Ò·s¼Wªº´ú¸Õ¤èªk
+1st-test:å®šç¾©æ¸¬è©¦æ–¹æ³•TestGutterGame(),æ¸¬è©¦20æ¬¡æŠ•çƒå…¨éƒ¨æ´—æºçš„ç‹€æ³,ç¸½å¾—åˆ†æ‡‰ç‚º0åˆ†<br />
+2nd-test:æ–°å¢žæ¸¬è©¦æ–¹æ³•TestAllOnes(),æ¸¬è©¦20æ¬¡æŠ•çƒéƒ½åªå¾—1åˆ†,ç¸½å¾—åˆ†æ‡‰ç‚º20,ä¸¦TestGutterGame()æ–¹æ³•åšé‡æ§‹,å…±é€šå¯¦ä½œé‚è¼¯éƒ¨åˆ†<br />
+3rd-test:æ–°å¢žæ¸¬è©¦æ–¹æ³•TestOneSpare(),æ¸¬è©¦åªæœ‰ä¸€æ¬¡è£œä¸­ä»¥åŠä¸€æ¬¡è¨ˆåˆ†æ ¼åªæ“Šå€’éƒ¨åˆ†çƒç“¶(å…¶ä»–16æ¬¡æŠ•çƒå¾—åˆ†å‡0åˆ†)çš„ç¸½å¾—åˆ†æ•¸<br />
+4th-test:æ–°å¢žæ¸¬è©¦æ–¹æ³•TestOneStrke(),æ¸¬è©¦åªæœ‰ä¸€æ¬¡å…¨ä¸­ä»¥åŠä¸€æ¬¡è¨ˆåˆ†æ ¼(frame)å…©æ¬¡æŠ•çƒå„æ“Šå€’3è·Ÿ4å€‹çƒç“¶çš„æƒ…æ³ä¸‹(16æ¬¡æŠ•çƒå¾—åˆ†å‡0åˆ†)çš„ç¸½å¾—åˆ†æ•¸<br />
+5th-test:æ–°å¢žæ¸¬è©¦æ–¹æ³•TestPerfectGame(),æ¸¬è©¦å…¨å€’çš„12æ¬¡æŠ•çƒä¸­çš„ç¸½å¾—åˆ†æ•¸(æ»¿åˆ†300åˆ†)<br />
+*åœ¨è¶Šå¾Œé¢çš„æ–°å¢žæ¸¬è©¦ä¸­æœƒç™¼ç¾ï¼Œæ…¢æ…¢ä¿®æ”¹å¾Œçš„Game Classä¸­çš„é‚è¼¯å…¨ä¸ç”¨ä¿®æ”¹,å¯ä»¥æ‡‰ä»˜æ‰€æ–°å¢žçš„æ¸¬è©¦æ–¹æ³•<br />

@@ -8,7 +8,7 @@ Unit Test - Bowling Game (保齡球比賽計分方式)
          如果在第10個計分格打出Strike或Spare就會再多出一次丟球的機會,這樣才能決定第10個計分格的分數，換言之第10個計分格最多可以丟3次。
          綜合以上單局最高分為300分,即連續投出12個Strike,而該局又被稱為Perfect Game
 
-commitMessage:
+commitMessage:<br />
 1st-test:定義測試方法TestGutterGame(),測試20次投球全部洗溝的狀況,總得分應為0分<br />
 2nd-test:新增測試方法TestAllOnes(),測試20次投球都只得1分,總得分應為20,並TestGutterGame()方法做重構,共通實作邏輯部分<br />
 3rd-test:新增測試方法TestOneSpare(),測試只有一次補中以及一次計分格只擊倒部分球瓶(其他16次投球得分均0分)的總得分數<br />

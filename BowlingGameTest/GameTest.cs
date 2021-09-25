@@ -58,6 +58,36 @@ namespace BowlingGameTest
             Assert.AreEqual(actual, expected);
         }
 
+        [TestMethod]
+        //測試玩家整局只有一次全中+一次計分格的分數
+        //共19次投球機會,其餘16次皆0分
+        private void TestOneStrike()
+        {
+            int expected = 24;
+            int actual;
+
+            RollStrike();
+            g.Roll(3);
+            g.Roll(4);
+
+            RollMany(16, 0);
+            actual = g.Score();
+
+            Assert.AreEqual(actual, expected);
+        }
+
+        [TestMethod]
+        //測試玩家在所以全倒的12投球中總得分數(滿分300分)
+        private void TestPerfectGame()
+        {
+            int expected = 300;
+            int actual;
+
+            RollMany(12, 10);
+            actual = g.Score();
+
+            Assert.AreEqual(actual, expected);
+        }
 
         private void RollMany(int n, int pins)
         {
@@ -71,6 +101,10 @@ namespace BowlingGameTest
         {
             g.Roll(5);
             g.Roll(5);
+        }
+        private void RollStrike()
+        {
+            g.Roll(10);
         }
     }
 }
